@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_statistic_statistic_items",
+  "info": {
+    "displayName": "Statistic Item",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "number": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
