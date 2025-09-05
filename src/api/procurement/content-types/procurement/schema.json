@@ -1,10 +1,10 @@
 {
-  "kind": "singleType",
-  "collectionName": "contacts",
+  "kind": "collectionType",
+  "collectionName": "procurements",
   "info": {
-    "singularName": "contact",
-    "pluralName": "contacts",
-    "displayName": "Contact"
+    "singularName": "procurement",
+    "pluralName": "procurements",
+    "displayName": "Procurement"
   },
   "options": {
     "draftAndPublish": true
@@ -23,21 +23,30 @@
         }
       }
     },
-    "mapEmbedUrl": {
-      "type": "string",
+    "documentFile": {
+      "type": "media",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     },
-    "contact": {
-      "type": "richtext",
+    "publishedDate": {
+      "type": "date",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "required": true
     }
   }
 }
